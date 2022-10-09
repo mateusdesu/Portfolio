@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Mateus Lopes da Silva</title>
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+    <link rel="stylesheet" href="assets/CSS/acordeon.css" />
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <img
+          src="assets/img/myPhoto.jpeg"
+          alt="Foto do Mateus Lopes da Silva"
+          class="photo"
+        />
+
+        <h1 class="title">
+          Hello there!<br />
+          Eu sou Mateus Lopes da Silva
+        </h1>
+
+        <div class="info">
+          <p class="graduation">Graduando em Ciência da Computação</p>
+          <p class="job">Estagiário no NUCAP - Unicarioca</p>
+          <p class="location">Rio de Janeiro - RJ</p>
+          <p class="phone"><a href="tel:(21) 97967-9937">(21) 97967-9937</a></p>
+          <p class="email">
+            <a href="mailto:mateuslopes1717@gmail.com"
+              >mateuslopes1717@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <div class="acordeonsContainer">
+          <section class="acordeon">
+              <button class="trigger" type="button"><h2>Habilidades</h2></button>
+              <div class="content">
+                <div class="skillsContainer">
+                  <section class="habilidadesProfissionais">
+                    <h3>Skills</h3>
+                    <ul class="skills">
+                      <li><img src="assets/icons/css.svg" alt="css"></li>
+                      <li><img src="assets/icons/javascript.svg" alt="Javascript"></li>
+                      <li><img src="assets/icons/react.svg" alt="React"></li>
+                      <li><img src="assets/icons/php.svg" alt="PHP"></li>
+                      <li><img src="assets/icons/git.svg" alt="Git"></li>
+                    </ul>
+                  </section>
+                  <section class="habilidadesPessoais">
+                    <h3>Habilidades pessoais</h3>
+                    <ul class="persornalSkills">
+                      <li>Criatividade</li>
+                      <li>Boa relação interpessoal</li>
+                      <li>Proatividade</li>
+                      <li>Rápido aprendizado</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </section>
+          <section>
+            <section class="acordeon">
+              <button class="trigger" type="button"><h2>Idiomas</h2></button>
+              <div class="content">
+                <ul class="languages">
+                  <li>Inglês(intermediário)</li>
+                  <li>Espanhol(intermediário)</li>
+                </ul>
+              </div>
+            </section>
+            <section class="acordeon">
+              <button class="trigger" type="button"><h2>Projetos</h2></button>
+              <div class="content">
+                <ul class="portfolio">
+                  <li>
+                    <h3 class="title github">Pokédex utilizando a PokeAPI</h3>
+                    <a href="https://1st-gen-pokedex-pokeapi.netlify.app" target="_blank"
+                      >https://1st-gen-pokedex-pokeapi.netlify.app/</a
+                    >
+                  </li>
+                  
+                </ul>
+              </div>
+            </section>
+            <section class="acordeon">
+              <button class="trigger" type="button"><h2>Experiência</h2></button>
+              <div class="content">
+                <ul class="experiencia">
+                  <li>
+                    <h3 class="title">Núcleo de Computação Aplicada(NUCAP) / Unicarioca</h3>
+                    <p class="period">Out 2022 - Atual</p>
+                    <p>Estágio com o tema "Uso de novas tecnologias digitais na educação" desenvolvendo jogos e softwares focados no ensino infantil utilizando a ferramenta Unity.</p>
+                    
+                    
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </section>
+        </div>
+      </header>
+    </main>
+
+    <script src="./assets/JS/acordeon.js"></script>
+  </body>
+</html>

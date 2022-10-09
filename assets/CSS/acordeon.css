@@ -1,0 +1,211 @@
+.acordeon {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  transition: 0.5s;
+}
+
+.acordeon.open,
+.acordeon:hover {
+  background-color: #784ba0;
+  border-color: #784ba0;
+}
+
+.acordeon .trigger {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+}
+
+.acordeon .trigger h2{
+  margin:0;
+  font-size:1.5rem;
+}
+
+.acordeon .trigger:hover {
+  cursor: pointer;
+}
+
+.acordeon .trigger::after {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.5rem;
+  height: 1rem;
+  background-image: url("../icons/arrow.svg");
+  transform: rotate(-180deg);
+  transition: 0.25s;
+}
+
+.acordeon.open .trigger::after {
+  transform: rotate(0deg);
+}
+
+.acordeon .content {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.acordeon.open .content {
+  display: inline-block;
+  height: auto;
+  opacity: 1;
+  padding: 0 1rem 1rem 2rem;
+}
+
+/* Languages */
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.languages li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 1rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom:.5rem;
+}
+
+.languages li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-image: url("../icons/check.svg");
+}
+
+/* Projects */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio li .title {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  font-size:700;
+  text-size:1.25rem;
+  margin:0;
+  margin-bottom:.5rem;
+}
+
+.portfolio li .title.github::before{
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right:.5rem;
+  width:1rem;
+  height:1rem;
+  background-image: url("../icons/github.svg");
+}
+
+.portfolio li a{
+  color: #fff;
+  text-decoration: none;
+}
+.portfolio li a:hover {
+  text-decoration: underline;
+}
+
+.portfolio li{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+/* Experiências profissionais */
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experiencia .period::before {
+  content:"";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../icons/calendar.svg");
+  width:1rem;
+  height:1rem;
+  margin-right:.5rem;
+}
+
+/* Habilidades */
+
+.skillsContainer .habilidadesProfissionais .skills{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:baseline;
+  padding:0;
+  margin:0;
+  flex-wrap: wrap;
+  list-style:none;
+}
+
+.skillsContainer img{
+  max-width:4rem;
+  margin: .5rem;
+}
+
+.skillsContainer .habilidadesPessoais ul{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:baseline;
+  padding:0;
+  margin:0;
+  flex-wrap: wrap;
+}
+
+.skillsContainer .habilidadesPessoais ul li{
+  margin-left:2rem;
+  padding: .5rem;
+}
+
+.skillsContainer .habilidadesProfissionais ul li{
+  padding: 0 .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+  }
+}
