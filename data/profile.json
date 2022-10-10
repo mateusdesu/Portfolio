@@ -1,0 +1,59 @@
+{
+    "name": "Mateus Lopes da Silva",
+    "photo": "../assets/img/myPhoto.jpeg",
+    "graduation": "Graduando em Ciência da Computação",
+    "job": "Estagiário no NUCAP - Unicarioca",
+    "location": "Rio de Janeiro - RJ",
+    "phone": "(21) 97967-9937",
+    "email": "mateuslopes1717@gmail.com",
+    "skills": {
+      "hardSkills": [
+        {
+          "name": "CSS",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+        },
+        {
+          "name": "Javascript",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        },
+        {
+          "name": "React",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        },
+        {
+          "name": "PHP",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        },
+        {
+          "name": "Git",
+          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+        }
+      ],
+      "softSkills": [
+        "Criatividade",
+        "Proatividade",
+        "Boa comunicação interpessoal",
+        "Rápido aprendizado"
+      ]
+    },
+    "languages": [
+      "Português BR (nativo)",
+      "Inglês (intermediário)",
+      "Espanhol (intermediário)"
+    ],
+    "portfolio": [
+      {
+        "name": "Pokédex utilizando a PokeAPI",
+        "url": "https://1st-gen-pokedex-pokeapi.netlify.app/",
+        "github": true
+      }
+    ],
+    "professionalExperience": [
+      {
+        "name": "Núcleo de Computação Aplicada(NUCAP) / Unicarioca",
+        "period": "Out 2022 - Atual",
+        "description": "Estágio com o tema \\\"Uso de novas tecnologias digitais na educação\\\" desenvolvendo jogos e softwares focados no ensino infantil utilizando a ferramenta Unity."
+      }
+      
+    ]
+  }
