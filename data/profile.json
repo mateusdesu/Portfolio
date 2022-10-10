@@ -1,6 +1,6 @@
 {
     "name": "Mateus Lopes da Silva",
-    "photo": "../assets/img/myPhoto.jpeg",
+    "photo": "https://avatars.githubusercontent.com/u/62315096?v=4",
     "graduation": "Graduando em Ciência da Computação",
     "job": "Estagiário no NUCAP - Unicarioca",
     "location": "Rio de Janeiro - RJ",
@@ -41,7 +41,7 @@
       "Inglês (intermediário)",
       "Espanhol (intermediário)"
     ],
-    "portfolio": [
+    "projects": [
       {
         "name": "Pokédex utilizando a PokeAPI",
         "url": "https://1st-gen-pokedex-pokeapi.netlify.app/",
