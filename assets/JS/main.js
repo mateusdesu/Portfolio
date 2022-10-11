@@ -40,6 +40,7 @@ async function GetProfileData(){
     const profileData = await fetchProfileData()
     updateProfileInfo(profileData)
     updateSoftSkills(profileData)
+    updateHardSkills(profileData)
 }
 
 GetProfileData()
