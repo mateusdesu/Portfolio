@@ -9,24 +9,28 @@
     "skills": {
       "hardSkills": [
         {
+          "name": "HTML",
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/html.svg"
+        },
+        {
           "name": "CSS",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/css.svg"
         },
         {
           "name": "Javascript",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/javascript.svg"
         },
         {
           "name": "React",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/react.svg"
         },
         {
           "name": "PHP",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/php.svg"
         },
         {
           "name": "Git",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
+          "logo": "https://raw.githubusercontent.com/mateusdesu/portifolio/main/assets/icons/git.svg"
         }
       ],
       "softSkills": [
