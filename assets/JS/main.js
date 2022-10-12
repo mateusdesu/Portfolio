@@ -1,46 +1,84 @@
-
-
 function updateProfileInfo(profileData) {
-    const photo = document.getElementById('profile.photo')
-    photo.src = profileData.photo
-    photo.alt = profileData.name
-    
-    const name = document.getElementById('profile.name')
-    name.innerText = profileData.name
+  const photo = document.getElementById("profile.photo");
+  photo.src = profileData.photo;
+  photo.alt = `Foto de ${profileData.name}`;
 
-    const graduation = document.getElementById('profile.graduation')
-    graduation.innerText = profileData.graduation
-    
-    const job = document.getElementById('profile.job')
-    job.innerText = profileData.job
+  const name = document.getElementById("profile.name");
+  name.innerText = profileData.name;
 
-    const location = document.getElementById('profile.location')
-    location.innerText = profileData.location
+  const graduation = document.getElementById("profile.graduation");
+  graduation.innerText = profileData.graduation;
 
-    const phone = document.getElementById('profile.phone')
-    phone.innerText = profileData.phone
-    phone.href = `tel: ${profileData.phone}`
+  const job = document.getElementById("profile.job");
+  job.innerText = profileData.job;
 
-    const email = document.getElementById('profile.email')
-    email.innerText = profileData.email
-    email.href = `mailto:${profileData.email}`
+  const location = document.getElementById("profile.location");
+  location.innerText = profileData.location;
+
+  const phone = document.getElementById("profile.phone");
+  phone.innerText = profileData.phone;
+  phone.href = `tel: ${profileData.phone}`;
+
+  const email = document.getElementById("profile.email");
+  email.innerText = profileData.email;
+  email.href = `mailto:${profileData.email}`;
 }
 
 function updateSoftSkills(profileData) {
-    const softSkills = document.getElementById('profile.skills.softSkills')
-    softSkills.innerHTML = profileData.skills.softSkills.map((skill) => `<li>${skill}</li>`).join('')
-
+  const softSkills = document.getElementById("softSkills");
+  softSkills.innerHTML = profileData.skills.softSkills
+    .map((skill) => `<li>${skill}</li>`)
+    .join("");
 }
 
 function updateHardSkills(profileData) {
-    const hardSkills = document.getElementById('profile.skills.hardSkills')
-    hardSkills.innerHTML = profileData.skills.hardSkill.map((skill) => `<li>${skill}</li>`).join('')
-}
-async function GetProfileData(){
-    const profileData = await fetchProfileData()
-    updateProfileInfo(profileData)
-    updateSoftSkills(profileData)
-    updateHardSkills(profileData)
+  const hardSkills = document.getElementById("hardSkills");
+  hardSkills.innerHTML = profileData.skills.hardSkills
+    .map((skill) => `<li><img src="${skill.logo}" alt="${skill.name}"></li>`)
+    .join("");
 }
 
-GetProfileData()
+function updateLanguages(profileData) {
+  const languages = document.getElementById("languages");
+  languages.innerHTML = profileData.languages
+    .map((language) => `<li>${language}</li>`)
+    .join("");
+}
+
+function updateProjects(profileData) {
+  const projects = document.getElementById("projects");
+  projects.innerHTML = profileData.projects
+    .map((project) => {
+      return `<li>
+    <h3 class="title github">${project.name}</h3>
+    <a href="${project.url}" target="_blank"
+      >${project.url}/</a
+    >
+  </li>`;
+    })
+    .join("");
+}
+
+function updateExperiences(profileData) {
+  const experiences = document.getElementById("experiences");
+  experiences.innerHTML = profileData.professionalExperience
+    .map((experience) => {
+      return `<li>
+        <h3 class="title">${experience.name}</h3>
+        <p class="period">${experience.period}</p>
+        <p>${experience.description.replace("'", '"')}</p>
+        </li>`;
+    })
+    .join("");
+}
+async function GetProfileData() {
+  const profileData = await fetchProfileData();
+  updateProfileInfo(profileData);
+  updateSoftSkills(profileData);
+  updateHardSkills(profileData);
+  updateLanguages(profileData);
+  updateProjects(profileData);
+  updateExperiences(profileData);
+}
+
+GetProfileData();
